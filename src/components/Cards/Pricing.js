@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Paper from "@material-ui/core/Paper";
 import clsx from "clsx";
 import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
+// import Button from "@material-ui/core/Button";
 // import { useTranslation } from 'next-i18next';
 import useStyles from "./cards-style";
 
@@ -45,11 +45,10 @@ function Pricing(props) {
                 <i className="ion-ios-close-circle-outline" />
               </span>
             )}
-            {/* {item.text} */}
           </li>
         ))}
       </ul>
-      <div className={classes.btnArea}>
+      {/* <div className={classes.btnArea}>
         <Button
           fullWidth
           variant="contained"
@@ -58,9 +57,8 @@ function Pricing(props) {
           size="large"
         >
           Get Started
-          {/* {"hosting-landing.getstarted"} */}
         </Button>
-      </div>
+      </div> */}
     </Paper>
   );
 }
