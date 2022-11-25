@@ -113,7 +113,7 @@ function Banner() {
                       localStorage.setItem('email', e.target.value)
                     }
                     }>Email Address:</label>
-                    <input type="email" name="#" className="form-control form-control-custom" placeholder="Type your email" required
+                    <input type="email" name="#" className="form-control form-control-custom" placeholder="Enter email address" required
                       onBlur={(e) => {
                         localStorage.setItem("email", e.target.value)
                       }}/>
@@ -125,7 +125,7 @@ function Banner() {
 
                 <TextField
                   className={classes.search}
-                  label="Type your desired domain name here"
+                  label="Enter a desired domain name here"
                   onChange={(e) => handleChange(e, "name")}
                  
                 />
