@@ -109,7 +109,7 @@ function Banner() {
               <h4>SECURE DOMAIN AND WEB HOSTING PLATORM</h4>
             </Typography>
             <Typography component="p" className={text.subtitle2}>
-              <h6 style={{ color: '#fff' }}>Kindly fill in your domain details, submit, and your available domain details will be emailed to you (T&C Apply).  </h6>
+              <h6 style={{ color: '#303F9F' }}>Kindly fill in your domain details, submit, and your available domain details will be emailed to you (T&C Apply).  </h6>
             </Typography>
             <form >
               <div className="row">
