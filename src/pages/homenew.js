@@ -59,7 +59,7 @@ function Landing(props) {
       {/* <Head> */}
       <title>
         {/* { brand.hosting.name } */}
-        &nbsp; - Home Page
+        &nbsp; - SIPRAIN
       </title>
       {/* </Head> */}
 

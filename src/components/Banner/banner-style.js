@@ -6,8 +6,8 @@ const bannerStyles = makeStyles((theme) => ({
   root: {
     background:
       theme.palette.type === "dark"
-        ? theme.palette.primary.dark
-        : theme.palette.primary.light,
+        ? "/images/cracknoteimg/karl-magnuson-LaHgrqo1ZRk-unsplash.jpg"
+        : "/images/cracknoteimg/karl-magnuson-LaHgrqo1ZRk-unsplash.jpg",
   },
   decoWrap: {
     position: "absolute",
@@ -17,8 +17,8 @@ const bannerStyles = makeStyles((theme) => ({
     overflow: "hidden",
     background:
       theme.palette.type === "dark"
-        ? theme.palette.primary.dark
-        : theme.palette.primary.light,
+        ? "/images/cracknoteimg/karl-magnuson-LaHgrqo1ZRk-unsplash.jpg"
+        : "/images/cracknoteimg/karl-magnuson-LaHgrqo1ZRk-unsplash.jpg",
     [theme.breakpoints.down("md")]: {
       display: "none",
     },
