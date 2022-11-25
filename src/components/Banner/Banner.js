@@ -14,6 +14,7 @@ import FormControl from "@material-ui/core/FormControl";
 // import { useTranslation } from 'next-i18next';
 import { useText } from "../../theme/common";
 import useStyles from "./banner-style";
+import Background from '../../../src/images/cracknoteimg/karl-magnuson-LaHgrqo1ZRk-unsplash.jpg'
 
 function Banner() {
   const classes = useStyles();
@@ -73,8 +74,14 @@ function Banner() {
     setValue({ ...values, [ type ]: event.target.value });
   };
 
+  const heroImg = {
+    height: "10vh",
+    width: "100%",
+    backgroundImage: "url(" + { Background } + ")"
+  }
+
   return (
-    <div className={classes.root} ref={elem}>
+    <div className={classes.root} ref={elem}  >
       <div className={classes.decoWrap}>
         <div className={clsx(classes.decoInner, hide && classes.hide)}>
           <div className={classes.illustration} id="net_art" />
@@ -116,7 +123,7 @@ function Banner() {
                     <input type="email" name="#" className="form-control form-control-custom" placeholder="Enter email address" required
                       onBlur={(e) => {
                         localStorage.setItem("email", e.target.value)
-                      }}/>
+                      }} />
                   </div>
                 </div>
 
@@ -127,7 +134,7 @@ function Banner() {
                   className={classes.search}
                   label="Enter a desired domain name here"
                   onChange={(e) => handleChange(e, "name")}
-                 
+
                 />
 
                 <div className={classes.action}>
@@ -173,7 +180,7 @@ function Banner() {
                   return window.FlutterwaveCheckout({
                     public_key: "FLWPUBK-00f1a8bfd678ad383f650cd6cccd643b-X",
                     // amount: total,
-                    amount: 50,
+                    amount: 20,
                     currency: "USD",
                     tx_ref: new Date().toISOString(),
                     customer: {
