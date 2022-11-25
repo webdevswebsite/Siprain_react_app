@@ -12,7 +12,8 @@ code {
     monospace;
 }
 .email-input{
-  /* border: 2px solid gray; */
+  /* margin-top: -50px; */
+  /* border: 2px solid rgb(155, 43, 43); */
   /* box-shadow: #ffff; */
   display: flex;
   background: #ffff;
@@ -23,9 +24,9 @@ code {
   align-items: center;
   justify-content: space-between;
   padding-left: 1%;
-  box-shadow: 4px 5px 5px -3px rgba(128,128,128,0.89);
--webkit-box-shadow: 4px 5px 5px -3px rgba(128,128,128,0.89);
--moz-box-shadow: 4px 5px 5px -3px rgba(128,128,128,0.89);
+ box-shadow: 4px 5px 5px -3px rgba(199,195,195,0.96);
+-webkit-box-shadow: 4px 5px 5px -3px rgba(199,195,195,0.96);
+-moz-box-shadow: 4px 5px 5px -3px rgba(199,195,195,0.96);
 }
  .email-input input{
    margin-left: 8rem;
@@ -48,4 +49,12 @@ code {
    border-radius: 5px;
    font-size: 20px;
    font-weight: 500;
+ }
+
+ #bannerwrap2{
+   margin-top: -30px;
+   height: 62vh;
+   box-shadow: 4px 5px 5px -3px rgba(128,128,128,0.89);
+-webkit-box-shadow: 4px 5px 5px -3px rgba(128,128,128,0.89);
+-moz-box-shadow: 4px 5px 5px -3px rgba(128,128,128,0.89);
  }

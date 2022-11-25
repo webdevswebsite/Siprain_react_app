@@ -73,13 +73,7 @@ function Banner() {
   const handleChange = (event, type) => {
     setValue({ ...values, [ type ]: event.target.value });
   };
-
-  const heroImg = {
-    height: "10vh",
-    width: "100%",
-    backgroundImage: "url(" + { Background } + ")"
-  }
-
+  
   return (
     <div className={classes.root} ref={elem}  >
       <div className={classes.decoWrap}>
@@ -104,7 +98,7 @@ function Banner() {
       </Hidden>
       <Container maxWidth="md">
         <div className={classes.bannerWrap}>
-          <div className={classes.text}>
+          <div className={classes.text} id="bannerwrap2">
             <Typography variant="h4" className={text.title2}>
               <h4>SECURE DOMAIN AND WEB HOSTING PLATORM</h4>
             </Typography>
@@ -126,7 +120,6 @@ function Banner() {
                       }} />
                   </div>
                 </div>
-
               </div>
               <Paper className={classes.searchDomain}>
 
@@ -134,7 +127,6 @@ function Banner() {
                   className={classes.search}
                   label="Enter a desired domain name here"
                   onChange={(e) => handleChange(e, "name")}
-
                 />
 
                 <div className={classes.action}>

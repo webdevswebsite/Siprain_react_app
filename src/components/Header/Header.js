@@ -108,7 +108,7 @@ function Header(props) {
                 </a>
               ) : (
                 <AnchorLink href="#home">
-                  <h4>SIPRAIN TECHNOLOGY</h4>
+                    <h4 style={{ color:'#303F9F'}}>SIPRAIN TECHNOLOGY</h4>
                   {/* <img src={logo} alt="logo" /> */}
 
                 </AnchorLink>
