@@ -14,7 +14,7 @@ import FormControl from "@material-ui/core/FormControl";
 // import { useTranslation } from 'next-i18next';
 import { useText } from "../../theme/common";
 import useStyles from "./banner-style";
-import Background from '../../../src/images/cracknoteimg/karl-magnuson-LaHgrqo1ZRk-unsplash.jpg'
+
 
 function Banner() {
   const classes = useStyles();
@@ -73,7 +73,7 @@ function Banner() {
   const handleChange = (event, type) => {
     setValue({ ...values, [ type ]: event.target.value });
   };
-  
+
   return (
     <div className={classes.root} ref={elem}  >
       <div className={classes.decoWrap}>
