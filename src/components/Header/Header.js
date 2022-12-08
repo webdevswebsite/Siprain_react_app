@@ -110,7 +110,7 @@ function Header(props) {
           openDrawer && classes.openDrawer
         )}
       >
-        <div className={classes.headerTop}>
+        <div className={`nav ${classes.headerTop}`} id="headernav">
           <Container fixed={isDesktop}>
             <div className={classes.logo}>
               {isMobile && (
@@ -140,8 +140,8 @@ function Header(props) {
                 </AnchorLink>
               )}
             </div>
-            <nav className={classes.userMenu}>
-              <span className="currency">Currency :</span>
+            <nav className={`currency ${classes.userMenu}`} style={{color:'#303F9F', fontWeight:'600px'}}>
+              <span className="currtext">Currency :</span>
               <select style={{ border: 'none' }} defaultValue={activeCurrency} onChange={handleChangeCurrency} >
                 {currencies.map((currency, idx) => (
                   <option

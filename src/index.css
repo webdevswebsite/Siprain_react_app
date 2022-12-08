@@ -49,7 +49,12 @@ code {
    border-radius: 5px;
    font-size: 20px;
    font-weight: 500;
- }
+  }
+  
+  .currency{
+    font-weight: 600px;
+    color: #4e63ed;
+}
 
  #bannerwrap2{
    margin-top: -30px;
@@ -58,3 +63,12 @@ code {
 -webkit-box-shadow: 4px 5px 5px -3px rgba(128,128,128,0.89);
 -moz-box-shadow: 4px 5px 5px -3px rgba(128,128,128,0.89);
  }
+ 
+@media (max-width:425px) {
+  .currency{
+    margin-top: 50px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+}
