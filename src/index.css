@@ -72,3 +72,8 @@ code {
     flex-direction: column;
   }
 }
+
+.herosection{
+  margin-top: 20px;
+  background: url(./images/cracknoteimg/karl-magnuson-LaHgrqo1ZRk-unsplash.jpg);
+}

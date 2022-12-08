@@ -26,7 +26,7 @@ const bannerStyles = makeStyles((theme) => ({
   cloudDeco: {
     background: `url(${
       theme.palette.type === "dark"
-        ? "/images/hosting/cloud_bottom_dark.svg"
+        ? "/images/cracknoteimg/karl-magnuson-LaHgrqo1ZRk-unsplash.jpg"
         : "/images/hosting/cloud_bottom_light.svg"
     }) repeat-x center 80px`,
     width: "100%",

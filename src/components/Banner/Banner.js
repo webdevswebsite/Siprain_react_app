@@ -23,10 +23,10 @@ function Banner() {
   const price = {
     USD: 50
   }
-  const { 
-    state: {currency, rate}
+  const {
+    state: { currency, rate }
   } = CurrencyState()
-  
+
   const classes = useStyles();
   const text = useText();
   const elem = useRef(null);
@@ -85,7 +85,7 @@ function Banner() {
   };
 
   return (
-    <div className={classes.root} ref={elem}  >
+    <div className={` herosection ${classes.root} ref={elem}`}>
       <div className={classes.decoWrap}>
         <div className={clsx(classes.decoInner, hide && classes.hide)}>
           <div className={classes.illustration} id="net_art" />
@@ -110,10 +110,10 @@ function Banner() {
         <div className={classes.bannerWrap}>
           <div className={classes.text} id="bannerwrap2">
             <Typography variant="h4" className={text.title2}>
-              <h4>SECURE DOMAIN AND WEB HOSTING PLATORM</h4>
+              <h4 style={{ color: '#4e63ed' }}>SECURE DOMAIN AND WEB HOSTING PLATORM</h4>
             </Typography>
             <Typography component="p" className={text.subtitle2}>
-              <h6 style={{ color: '#303F9F' }}>Kindly fill in your domain details, submit, and your available domain details will be emailed to you (T&C Apply).  </h6>
+              <h6 style={{ color: '#4e63ed' }}>Kindly fill in your domain details, submit, and your available domain details will be emailed to you (T&C Apply).  </h6>
             </Typography>
             <form >
               <div className="row">
