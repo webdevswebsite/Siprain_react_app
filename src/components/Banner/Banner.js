@@ -110,10 +110,10 @@ function Banner() {
         <div className={classes.bannerWrap}>
           <div className={classes.text} id="bannerwrap2">
             <Typography variant="h4" className={text.title2}>
-              <h4 style={{ color: '#4e63ed' }}>SECURE DOMAIN AND WEB HOSTING PLATORM</h4>
+              <h4 style={{ color: '#fff' }}>SECURE DOMAIN AND WEB HOSTING PLATORM</h4>
             </Typography>
             <Typography component="p" className={text.subtitle2}>
-              <h6 style={{ color: '#4e63ed' }}>Kindly fill in your domain details, submit, and your available domain details will be emailed to you (T&C Apply).  </h6>
+              <h6 style={{ color: '#fff' }}>Kindly fill in your domain details, submit, and your available domain details will be emailed to you (T&C Apply).  </h6>
             </Typography>
             <form >
               <div className="row">

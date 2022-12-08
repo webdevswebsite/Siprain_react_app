@@ -75,5 +75,8 @@ code {
 
 .herosection{
   margin-top: 20px;
-  background: url(./images/cracknoteimg/karl-magnuson-LaHgrqo1ZRk-unsplash.jpg);
+  background: url(./images/cracknoteimg/christina-wocintechchat-com-4GpcEI8cqUk-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
