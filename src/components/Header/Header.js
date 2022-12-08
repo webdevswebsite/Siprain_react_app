@@ -18,6 +18,9 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import MobileMenu from "./MobileMenu";
 import useStyles from "./header-style";
 import navMenu from "./menu";
+import { CurrencyState } from "../../context/CurrencyContext";
+
+
 
 let counter = 0;
 function createData(name, url, offset) {
@@ -36,6 +39,29 @@ const LinkBtn = React.forwardRef(function LinkBtn(props, ref) {
 });
 
 function Header(props) {
+
+  const {
+    state: { currency, currencies, rate },
+    dispatch: dispatchCurrency
+  } = CurrencyState();
+
+  console.log(currency, rate)
+
+  const [ activeCurrency, setActiveCurrency ] = useState(localStorage.getItem('currency'))
+  console.log(setActiveCurrency)
+
+  const handleChangeCurrency = ({ target: { value } }) => {
+    dispatchCurrency({
+      type: value,
+      payload: value
+    })
+  }
+
+  useEffect(() => {
+    if (activeCurrency === undefined) return
+    window.localStorage.setItem('currency', activeCurrency || 'USD');
+  }, [ activeCurrency ])
+
   const [ fixed, setFixed ] = useState(false);
   let flagFixed = false;
   const handleScroll = () => {
@@ -108,15 +134,24 @@ function Header(props) {
                 </a>
               ) : (
                 <AnchorLink href="#home">
-                    <h4 style={{ color:'#303F9F'}}>SIPRAIN TECHNOLOGY</h4>
+                  <h4 style={{ color: '#303F9F' }}>SIPRAIN TECHNOLOGY</h4>
                   {/* <img src={logo} alt="logo" /> */}
 
                 </AnchorLink>
               )}
             </div>
             <nav className={classes.userMenu}>
-
-
+              <span className="currency">Currency :</span>
+              <select style={{ border: 'none' }} defaultValue={activeCurrency} onChange={handleChangeCurrency} >
+                {currencies.map((currency, idx) => (
+                  <option
+                    defaultValue={activeCurrency}
+                    value={currency}
+                    key={idx + currency}>
+                    {currency}
+                  </option>
+                ))}
+              </select>
             </nav>
           </Container>
         </div>
